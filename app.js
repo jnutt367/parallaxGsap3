@@ -8,7 +8,7 @@ let tl = gsap.timeline({
         start: "top 25%",
         end: "+=100",
         toggleActions: "restart none none reverse",
-        markers: true
+        markers: false
     }
 })
 
