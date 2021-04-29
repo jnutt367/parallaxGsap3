@@ -20,4 +20,4 @@ let tl = gsap.timeline({
     .fromTo("#roar", { opacity: 0, y: -100 }, { duration: 3, opacity: 1, y: -120, ease: "back" })
     .to("#man1", { y: -100 }, 1)
     .to("#man2", { x: 100, y: -200 }, 3)
-    .to(".cavemen", { x: 300, ease: "bounce.in" })
+    .to(".cavemen", { x: 900, ease: "bounce.in" })
