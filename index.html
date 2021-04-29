@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax with Pre-historic Theme</title>
+    <style>
+        body {
+            background-color: chartreuse;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .wrapper {
+            height: 100vh;
+            background-image: url('svg/Asset 40.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .cavemen {
+            position: relative;
+            z-index: 1;
+        }
+        
+        #man1 {
+            position: relative;
+            width: 3em;
+            top: 22em;
+            left: 9em;
+        }
+        
+        #man2 {
+            position: relative;
+            width: 3em;
+            top: 31em;
+            left: -3em;
+            z-index: 1;
+        }
+        
+        #tree {
+            position: relative;
+            width: 15em;
+            top: 2em;
+            z-index: 2;
+        }
+        
+        #dino {
+            position: relative;
+            width: 15em;
+            top: 10em;
+            left: 13em;
+            z-index: 2;
+        }
+        
+        #text {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="cavemen">
+            <img id="man1" src="svg/Asset 2.svg">
+            <img id="man2" src="svg/Asset 3.svg">
+        </div>
+        <img id="text" src="svg/Asset 138.svg">
+        <img id="tree" src="svg/Asset 42.svg">
+        <img id="dino" src="svg/Asset 4.svg">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
