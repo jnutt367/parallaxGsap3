@@ -67,13 +67,24 @@
         
         #roar {
             position: relative;
-            width: 18em;
+            width: 10em;
+            left: 6em;
+            top: 3em;
         }
         
         #text {
             display: grid;
             align-items: center;
             justify-content: center;
+        }
+        
+        @media (min-width:500px) {
+            #roar {
+                position: relative;
+                left: -10em;
+                top: 10em;
+                width: 10em;
+            }
         }
     </style>
 </head>
@@ -86,8 +97,11 @@
         </div>
         <img id="text" src="svg/Asset 138.svg">
         <img id="tree" src="svg/Asset 42.svg">
-        <img id="dino" src="svg/Asset 4.svg">
-        <img id="roar" src="svg/Asset 285.svg">
+        <div class="dino-roar">
+            <img id="dino" src="svg/Asset 4.svg">
+            <img id="roar" src="svg/Asset 285.svg">
+        </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
