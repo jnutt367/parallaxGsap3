@@ -1,4 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(MotionPathPlugin)
 gsap.defaults({ ease: "none", duration: 1 })
 
 
@@ -21,3 +22,4 @@ let tl = gsap.timeline({
     .to("#man1", { y: -100 }, 1)
     .to("#man2", { x: 100, y: -200 }, 3)
     .to(".cavemen", { x: 2500, ease: "bounce.in" })
+    .fromTo("#terry", { opacity: 1, y: -400, x: -200 }, { duration: 10, opacity: 1, x: 2500, ease: "back", repeat: "-1" }, 0)
